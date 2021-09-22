@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root{
+    --white: #fff;
+    --black: #0f0f0f;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --grey: rgb(173, 169, 169);
+    --dark-grey: #222831;
+}
+
+
+/* Universal style (Do this all the time)*/
+*, *::before, *::after{ 
+    /*put this ::after and ::before because * doesnot include these two things.*/
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box; /*border-box means the total width and height of a box is calculated including padding size and border size but not the margin size.*/
+    font-size: 16px;
+}
+
+/* HTML and Body style (Do this all the time)*/
+html, body {
+    height: 100%;
+}
+
+/* Body style (do this all the time)*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outer-box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.color-generator{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 
+    This has been done to cover the left sapce in the horizontal axis after the property justify-content: center;
+    */
+    flex: 50%;
+    padding: 8rem 4rem;
+    background-color: #ecf0f3;
+}
+
+.inner-box{
+    text-align: center;
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #ffffff;
+}
+
+.inner-box p, .inner-box span{
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.inner-box span{
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+    padding: 0.5rem 1rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons > button{
+    outline: none;
+    border: none;
+    background-color: #ecf0f3;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    box-shadow: 13px 10px 20px #cbced1,
+    -13px -10px 20px #ffffff;
+}
+
+.buttons > input{
+    cursor: pointer;
+    box-shadow: 13px 10px 20px #cbced1,
+    -13px -10px 20px #ffffff;
+}
+
+.span-text-color{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

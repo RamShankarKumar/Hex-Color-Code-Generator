@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Colour Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-box">
+        <div class="color-generator" id="generator1">
+            <div id="random-color" class="inner-box">
+                <p>Random Hex Colour Generator</p>
+                <div class="span-text-color">
+                    <span id= "gen1-span-text">#######</span>
+                    <span id= "gen1-span-color">COLOUR</span>
+                </div>
+                <div id="generate-button" class="buttons">
+                    <button id="gen1-button-generate">Generate</button>
+                    <button id="gen1-button-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="color-generator" id="generator2">
+            <div id="specific-color" class="inner-box">
+                <p>Hex Code Generator</p>
+                <div class="span-text-color">
+                    <span id= "gen2-span-text">#######</span>
+                    <span id= "gen2-span-color">COLOUR</span>
+                </div>
+                <div id="pick-button" class="buttons">
+                    <input type="color" id="colorPicker" value="#6a5acd">
+                    <button id="gen2-button-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Hex_Color_Generator.js"></script>
+</body>
+</html>
